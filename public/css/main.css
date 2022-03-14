@@ -1,0 +1,54 @@
+#root {
+  background: linear-gradient(to right, #000, #0f9b0f)
+}
+
+.title {
+  min-height: 9vh;
+}
+
+.card {
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+@media (max-width: 767px) {
+  .card.editor {
+    height: 39vh;
+    margin-bottom: 1vh;
+  }
+
+  .card.previewer {
+    height: 50vh;
+  }
+}
+
+.card.editor {
+  overflow: hidden;
+  border:2px solid white;
+  background: black;
+  font-family: consolas;
+}
+
+.card.editor .card-body {
+  padding: 0;
+}
+
+#editor {
+  height:100%;
+  border: none;
+  background: black;
+  color: white;
+}
+
+
+code {
+  font-family: consolas;
+  background-color: #EAEAEA;
+  padding:0 5px;
+}
+
+blockquote {
+  border-left: 5px solid #ddd;
+  padding-left: 1rem;
+  background-color: #F6F6F6;
+}
